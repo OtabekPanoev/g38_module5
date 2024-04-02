@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: A
+Created-By: 18.0.2 (Amazon.com Inc.)
+
