@@ -35,7 +35,7 @@ public class ConstraintsLambda {
         runnable.run();
         callable.call();*/
 
-        final int a = 10;  // final
+        /*final int a = 10;  // final
         int b = 20; // effectively final
 
         Runnable runnable = () -> {
@@ -48,7 +48,13 @@ public class ConstraintsLambda {
 //        b = b + 1;
 
         System.out.println(a);
-        runnable.run();
+        runnable.run();*/
+
+        MySupplier<String> supplier = () -> {
+            return "Pdp";
+        };
+
+        String supply = supplier.supply();
 
     }
 
@@ -63,6 +69,14 @@ public class ConstraintsLambda {
 @FunctionalInterface
 interface MySupplier<E> {
     E supply();
+
+    static void  m1() {
+
+    }
+
+    default void m2() {
+
+    }
 }
 
 @FunctionalInterface
