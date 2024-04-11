@@ -80,8 +80,21 @@ public class Main {
 
         System.out.println(Arrays.toString(array));*/
 
-        int[] ints = {1,5,2,5,7};
-        IntStream stream = Arrays.stream(ints);
+//        int[] ints = {1,5,2,5,7};
+//        IntStream stream = Arrays.stream(ints);
+
+//        Stream<Integer> stream = Stream.of(2, 5, 10, 0, 8, 20);
+//        Stream<Integer> stream1 = stream.filter((num) -> num < 2);
+//        Stream<Integer> stream3 = stream.filter((num) -> num < 10);
+//        Stream<Integer> stream2 = stream1.filter((num) -> num > 5);
+
+        List<Integer> list = Stream.of(2, 5, 10, 0, 8, 20)
+                .filter((num) -> num < 2)
+                .limit(2)
+                .toList();
+
+//        stream.filter();
+//        stream1.toList();
 
 
     }
