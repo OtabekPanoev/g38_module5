@@ -8,8 +8,8 @@ import java.io.IOException;
 import java.lang.reflect.Type;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
+import java.util.function.BinaryOperator;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -43,14 +43,54 @@ public class Main {
         Type type = new TypeToken<List<Student>>(){}.getType();
         List<Student> students = gson.fromJson(jsonStr, type);
 
-        Comparator<Student> comparing = Comparator.comparing(student -> student.getAge());
-        Comparator<Student> studentComparator = comparing.thenComparing(student -> student.getGender());
-        students.stream()
-                .sorted(
-                        Comparator.comparing(Student::getAge, Comparator.reverseOrder())
-                                .thenComparing(Student::getGender)
-                ).forEach(student -> System.out.println(student));
+//        Function<Student, Integer> function = student -> student.getAge();
+//        Function<Student, Integer> function2 = Student::getAge;
 
+//        students.stream()
+//                .sorted(
+//                        Comparator.comparing(Student::getAge)
+//                                .thenComparing(Student::getCountry)
+//                                .thenComparing(Student::getFull_name)
+//                )
+//                .forEach(student -> System.out.println(student));
+
+
+        /*List<Student> collect = students.stream().collect(Collectors.toList());
+        Set<Student> set = students.stream().collect(Collectors.toSet());
+        */
+
+
+       /* Map<Integer, List<Student>> collect = students.stream()
+                .collect(Collectors.groupingBy(Student::getAge));
+
+        collect.forEach((k, v) -> {
+            System.out.println("Key: " + k);
+            for (Student student : v) {
+                System.out.println("\t\t\t" + student);
+            }
+        });*/
+
+//        String collect = students.stream()
+//                .map(Student::toString)
+//                .collect(Collectors.joining(",\n", "[", "]" ));
+
+//        System.out.println(collect);
+
+
+        /*Map<Boolean, List<Student>> collect = students.stream()
+                .collect(Collectors.partitioningBy(student -> student.getAge() > 25));
+
+        collect.forEach((k, v) -> {
+            System.out.println("Key: " + k);
+            for (Student student : v) {
+                System.out.println("\t\t\t" + student);
+            }
+        });*/
+
+        Stream<String> stream = Stream.of("java", ".net", "python", "Scala", "Kotlin", "Groovy");
+        Optional<String> collect = stream.reduce((str1, str2) -> str1 + " , " + str2);
+
+        collect.ifPresent(str -> System.out.println(str));
 
     }
 }
