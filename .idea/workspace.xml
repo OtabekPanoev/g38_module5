@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22b25bd2-56b7-448c-87a6-faafe9d5900a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/uz/pdp/HttpClientExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/posts.json" afterDir="false" />
+    <list default="true" id="22b25bd2-56b7-448c-87a6-faafe9d5900a" name="Changes" comment="smth">
+      <change afterPath="$PROJECT_DIR$/A.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uz/pdp/UrlAndUrlConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uz/pdp/UrlAndUrlConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uz/pdp/HttpClientExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uz/pdp/HttpClientExample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -39,6 +39,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -89,6 +90,19 @@
       <updated>1711991488009</updated>
       <workItem from="1711991489156" duration="1000" />
     </task>
+    <task id="LOCAL-00001" summary="smth">
+      <option name="closed" value="true" />
+      <created>1713023015323</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713023015323</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="smth" />
+    <option name="LAST_COMMIT_MESSAGE" value="smth" />
   </component>
 </project>
